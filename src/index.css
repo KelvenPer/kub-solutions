@@ -1,0 +1,94 @@
+/* Reseta os estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para o corpo */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Classe para centralizar conteúdo */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilo para botões */
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: #4caf50;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #357a38;
+  }
+  
+  /* Inputs */
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Estilo para mensagens de erro */
+  .error-message {
+    color: #ff0000;
+    font-size: 0.875rem;
+  }
+  
+  /* Adiciona um visual de card */
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
