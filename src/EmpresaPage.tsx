@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import './EmpresaPage.css'; // Arquivo CSS para estilização
+import './EmpresaPage.css'; 
 
 const EmpresaPage: React.FC = () => {
-  const [isRegistered, setIsRegistered] = useState(false); // Estado para saber se a empresa é registrada
-  const [email, setEmail] = useState(''); // Para armazenar o e-mail da empresa
+  const [isRegistered, setIsRegistered] = useState(false); 
+  const [email, setEmail] = useState(''); 
 
-  // Função para lidar com o submit do formulário
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (isRegistered) {
-      // Se a empresa já é registrada, apenas enviar o e-mail
+      
       alert(`Bem-vindo de volta, empresa ${email}`);
     } else {
-      // Se a empresa não tem cadastro, redireciona para a página de cadastro
+      
       alert('Redirecionando para cadastro...');
     }
   };

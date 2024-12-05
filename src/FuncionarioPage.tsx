@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import './FuncionarioPage.css'; // Arquivo CSS para estilização
+import './FuncionarioPage.css'; 
 
 const FuncionarioPage: React.FC = () => {
-  const [isRegistered, setIsRegistered] = useState(false); // Estado para saber se o usuário é registrado
-  const [email, setEmail] = useState(''); // Para armazenar o e-mail do usuário
+  const [isRegistered, setIsRegistered] = useState(false); 
+  const [email, setEmail] = useState(''); 
 
-  // Função para lidar com o submit do formulário
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (isRegistered) {
-      // Se o usuário já é registrado, apenas enviar o e-mail
+      
       alert(`Bem-vindo de volta, ${email}`);
     } else {
-      // Se o usuário não tem cadastro, redireciona para a página de cadastro
       alert('Redirecionando para cadastro...');
     }
   };
